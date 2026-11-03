@@ -1,0 +1,4 @@
+region        = "cn-north-4"
+bucket_prefix = "iac-static-site"
+multi_az      = false        # 单 AZ
+site_dir      = "./site"

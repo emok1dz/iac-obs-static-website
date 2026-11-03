@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello IaC · 华为云 OBS 静态网站</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="card">
+    <p class="tag">Terraform · Huawei Cloud OBS</p>
+    <h1>Hello IaC!</h1>
+    <p>这个页面由 Terraform 一条 <code>apply</code> 部署在华为云 OBS 上。</p>
+    <ol>
+      <li>创建 OBS 桶（单 AZ，ACL：public-read）</li>
+      <li>上传 <code>site/</code> 目录下的全部文件</li>
+      <li>开启静态网站托管（首页 index.html，错误页 error.html）</li>
+    </ol>
+    <p class="muted">访问一个不存在的路径，可以看到自定义的 404 错误页。</p>
+  </main>
+</body>
+</html>
